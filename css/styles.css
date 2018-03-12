@@ -1,0 +1,304 @@
+/*
+
+Colours:
+
+Light yellow:   #FFF653;
+Mid yellow:     #CEC441;
+
+Light grey:     #C6C6C6;
+Mid grey:       #AAAAAA;
+Dark grey:      #999999;
+
+*/
+
+/*******************
+  BASE SETUP
+*******************/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; 
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.container {
+  margin: 0 auto;
+  width: 95%;
+}
+
+
+/*******************
+  FONT SETUP
+*******************/
+
+body {
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 24px;
+}
+
+h1,
+.strapline p,
+.teasers h2,
+.intro-content h2 {
+	font-family: "Merriweather", serif;
+	margin: 10px;
+	text-transform: capitalize;
+}
+
+.cta,
+nav li:nth-child(-n+2) a {
+	font-family: "Oswald";
+	text-transform: uppercase;
+}
+
+
+/*******************
+  GENERAL
+*******************/
+
+.cta {
+	display: block;
+	text-transform: capitalize;
+	padding: 10px;
+	border-radius: 6px;
+	text-align: center;
+	color: #000;
+}
+
+.cta-yellow {
+	background-color: #FFF653;
+	border-bottom: 3px solid #CEC441;
+}
+
+.cta-grey {
+	background-color: #C6C6C6;
+	border-bottom: 3px solid #999;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/*******************
+HEADER
+*******************/
+
+header {
+	background-color: black;
+	padding: 20px 0;
+	border-bottom: 4px solid #CEC441;
+}
+
+h1 {
+	font-family: merriweather, serif;
+	font-size: 25px;
+	color: #FFF653;
+}
+
+
+nav {
+	float: right;
+	font-size: 20px;
+}
+
+nav ul {
+	margin: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+nav a {
+	color: #fff;
+}
+
+
+/*******************
+  STRAPLINE
+*******************/
+
+.strap-line {
+	background-color: #999999;
+	text-align: center;
+	font-family: 'Merriweather', serif;
+	font-size: 24px;
+	padding: 30px 0;
+	font-style: italic;
+	border-bottom: 1px solid #FFF653;
+}
+
+.strap-line {
+	font-weight: 700;
+}
+
+.strikethrough {
+	text-decoration: line-through;
+	color: #C6C6C6;
+}
+
+.underline {
+	text-decoration: underline #FFF653;
+}
+
+
+/*******************
+  INTRO
+*******************/
+
+.intro {
+	background-image: url("../images/coworking.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 20px 0;
+}
+
+.intro-content {
+
+	background-color: rgba(255,255,255, 0.7);
+	width: 350px;
+	margin-left: auto;
+	padding: 20px 30px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.intro-content h2 {
+	margin: 10px 0;
+	padding-bottom: 10px;
+}
+
+.intro-content p {
+	line-height: 1.5;
+	margin: 0 10px;
+	padding-bottom: 10px;
+}
+
+
+/*******************
+  TEASERS
+*******************/
+
+.teasers {
+	padding: 20px 0;
+}
+
+.teasers-block h2 {
+	margin: 10px 0;
+	line-height: 1.3;
+}
+
+.teasers-block {
+	float: left;
+	width: 33.333333333333%;
+	border-right: 1px solid #c6c6c6;
+	padding: 20px;
+}
+
+.teasers-block last-child {
+	border-right: none;
+}
+
+.teasers-block p {
+	line-height: 1.5;
+	margin: 0;
+}
+
+.teasers ul {
+	padding: 0;
+	margin: 0;
+}
+
+/*******************
+  FOOTER
+*******************/
+
+footer {
+	background-color: black;
+	padding: 20px 0;
+}
+
+span {
+	color: #fff;
+	font-size: 20px;
+}
+
+
+/*******************
+ DEVELOPERS & DESIGNERS MAIN
+*******************/
+
+.main {
+	background-color: #C6C6C6;
+	padding: 40px 5px;
+}
+
+/*******************
+  GRID-CONTAINER
+*******************/
+
+.grid-container {
+	display: grid;
+  	grid-template-columns: auto auto auto auto;
+  	grid-auto-rows: auto auto auto auto;
+  	grid-gap: 10px;
+  	background-color: #C6C6C6;
+  	padding: 10px;
+}
+
+.grid-container > div {
+  	background-color: white; /*this is correct colour*/
+  	text-align: left;
+  	padding: 15px 10px;
+  	font-size: 30px;
+ }
+
+
+/*******************
+ BOX
+*******************/
+.placeholder {
+	margin-left: 10px;
+	border: 0;
+	border-color: white;
+	border-style: solid;
+	background-color: white;
+
+}
+
+.some-person {
+	color: #000;
+	padding:10px 0 15px 0;
+	text-transform: capitalize;
+
+}
+
+.experience {
+	display: inline;
+	color: #fff;
+	background-color: #999999;
+	border-radius: 50px;
+	padding: 1px 10px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.developers .experience {
+	text-transform: uppercase;
+}
+
+.cta-yellow-contact {
+	margin: 10px 5px;
+}
+
+
+
